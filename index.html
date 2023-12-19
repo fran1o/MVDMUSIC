@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>MVDMusic</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Parcial de Diseño de Interfaz Web - Francisco Gonzalez - 311787 - 04/12/2023">
+    <!--Primero el móvil, no tender a hacer zoom, sino levantar a escala natural siempre y cuando haya
+       sido pensado como un sitio responsive, y anular el comportamiento de ajustar a los límites del dispositivo
+       el contenido, cuando este sobresalga-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <!--Bootstrap CSS-->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <!--CSS Propio-->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container-fluid">
+            <header class="row justify-content-center ">
+                <figure class="col-lg-2 col-sm-5 col-md-4">
+                    <img class="img-fluid" src="img/iso-logo.jpg" alt="LOGO MVD MUSIC">
+                </figure>
+                <nav class="col-md-8 my-3 col-lg-10">
+                    <ul class="d-flex flex-column flex-md-row justify-content-center ">
+                        <li><a href="#Bandas">Bandas</a></li>
+                        <li><a href="#Tickets">Tickets</a></li>
+                        <li class=" d-none d-md-block"><a href="#Suscribite"> Suscribite</a></li>
+                    </ul>
+            </nav>
+            </header>
+            
+    </div>
+
+    <div class="container-fluid imgPortada">
+        <div class="row justify-content-center align-items-center pt-5">
+            <div class="col-8 col-lg-10 fondoViviMVD">
+            <h1>VIVI EL MVD MUSIC</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat odio praesentium possimus, at aliquid voluptatem odit fuga voluptates tempora, veniam repellat quibusdam modi reiciendis dolor quia ratione consequatur non provident.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        
+        <section class="row">
+            <h1 class="colorTitulo">BANDAS</h1>
+            <article class="col-6 col-md-4 col-lg-3 py-3">
+                <figure>
+                    <img class="img-fluid bordeimg" src="img/NTVG.jpeg" alt="No te va gustar" class="img-fluid">
+                </figure>
+                <h2>NO TE VA GUSTAR</h2>
+                <p>aca texto</p>
+                <input class="btn btn-dark" type="button" value="Ver mas">
+            </article>
+            <article class="col-6 col-md-4 col-lg-3 py-3" >
+                <figure>
+                    <img class="img-fluid bordeimg" src="img/Camila.jpeg" alt="Camila sapin" class="img-fluid">
+                </figure>
+                <h2>CAMILA SAPIN</h2>
+                <p>aca texto</p>
+                <input class="btn btn-dark" type="button" value="Ver mas">
+            </article>
+            <article class="d-none d-md-block py-3 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid bordeimg" src="img/Luciano.jpg" alt="Luciano Supervielle" class="img-fluid">
+                </figure>
+                <h2>LUCIANO SUPERVIELLE</h2>
+                <p>aca texto</p>
+                <input class="btn btn-dark" type="button" value="Ver mas">
+            </article>
+            <article class="py-3 col-lg-3">
+                <figure>
+                    <img class="img-fluid bordeimg " src="img/Cuarteto.jpeg" alt="El cuarteto de nos" class="img-fluid">
+                </figure>
+                <h2>EL CUARTETO DE NOS</h2>
+                <p>aca texto</p>
+                <input class="btn btn-dark" type="button" value="Ver mas">
+            </article>
+        </section>
+    </div>
+
+    <div class="container-fluid py-1">
+        
+        <div class="row colorContenidoTickets">
+            <h1 class="colorTitulo">TICKETS</h1>
+            <div class="row align-items-lg-end justify-content-end">
+                <div class="col-md-6 col-lg-5 ">
+                <h2>PRECIOS</h2>
+                <table class="table table-striped text-center table-bordered">
+                    <tr>
+                        <th>SECTOR</th>
+                        <th>PRECIO PREVENTA</th>
+                        <th>PRECIO</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Campo</strong></td>
+                        <td>$1000</td>
+                        <td>$1500</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Platea</strong></td>
+                        <td>$1300</td>
+                        <td>$1800</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Platea VIP</strong></td>
+                        <td>$1800</td>
+                        <td>$2200</td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/banda.jpg" alt="imagen banda en seccion tickets">
+                </div>
+            </div>
+            
+        </div>
+        <section class="row justify-content-center">
+            <h1 class="colorTitulo">SUSCRBITE</h1>
+            <article class="col-md-8">
+                <p>Recibiras informacion y descuentos exclusivos</p>
+                <form action="">
+                    <label for="nombre" class="form-label col-lg-5">Nombre</label>
+                    <input type="text" class="form-control col-lg-5" name="nombre" id="nombre" required>
+                    <label for="nombre" class="form-label col-lg-5">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+
+                    <input class="btn btn-dark mt-3 col-lg-2 " type="button" value="Enviar">
+                </form>
+            </article>
+        </section>
+    </div>
+
+    <footer class="container-fluid fondoFooter">
+            <div class="row ">
+                <p class="text-center py-4">Francisco Gonzalez - 311787</p>
+            </div>
+            
+        </div>
+    </footer>
+<!-- JavaScript -->
+<script src="js/bootstrap.bundle.js"></script>
+<!--<script src="js/bootstrap.js"></script>-->
+</body>
+
+</html>

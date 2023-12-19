@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.imgPortada{
+    height: 60vh;
+    margin: 30px 0;
+    background-image: url(../img/Portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fondoViviMVD{
+    background-color: rgba(0, 0, 0, 0.285);
+}
+
+.fondoViviMVD h1, p{
+    color: white;
+}
+
+.colorTitulo{
+    background-color: orange;
+
+}
+
+.fondoFooter{
+    background-color: black;
+}
+
+nav ul {
+    margin:0;
+    padding: 0;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    flex: 1
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    background-color: black;
+    border-top: 1px solid #fff;
+    border-radius: 5px;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    border-color: orange;
+    background-color: orange;
+    color: black;
+}
+
+.h1{
+    font-size: 80px;
+}
+
+.h2{
+    font-size: 60px;
+    padding: 20px;
+}
+
+.table th{
+    background-color: orange;
+}
+
+.bordeimg{
+    border-bottom: solid 4px orange;
+}
+
+.colorContenidoTickets{
+    background-color: rgb(238, 238, 238);
+}
